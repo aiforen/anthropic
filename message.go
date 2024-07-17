@@ -49,6 +49,11 @@ type MessagesRequest struct {
 	ToolChoice    *ToolChoice      `json:"tool_choice,omitempty"`
 }
 
+// TODO: Validate request before send
+func (m *MessagesRequest) Validate() error {
+	return nil
+}
+
 func (m *MessagesRequest) SetTemperature(t float32) {
 	m.Temperature = &t
 }
@@ -258,6 +263,10 @@ type ToolChoice struct {
 }
 
 func (c *Client) CreateMessages(ctx context.Context, request MessagesRequest) (response MessagesResponse, err error) {
+	if validateErr := request.Validate(); validateErr != nil {
+		return MessagesResponse{}, validateErr
+	}
+
 	request.Stream = false
 
 	var setters []requestSetter

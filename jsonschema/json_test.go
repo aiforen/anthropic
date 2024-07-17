@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/liushuangls/go-anthropic/v2/jsonschema"
+	"github.com/aiforen/anthropic/jsonschema"
 )
 
 func TestDefinition_MarshalJSON(t *testing.T) {

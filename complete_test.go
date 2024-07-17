@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/liushuangls/go-anthropic/v2"
-	"github.com/liushuangls/go-anthropic/v2/internal/test"
+	"github.com/aiforen/anthropic"
+	"github.com/aiforen/anthropic/internal/test"
 )
 
 func TestComplete(t *testing.T) {
