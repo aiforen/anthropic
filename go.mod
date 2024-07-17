@@ -1,3 +1,3 @@
-module github.com/liushuangls/go-anthropic/v2
+module github.com/aiforen/anthropic
 
-go 1.21
+go 1.22
