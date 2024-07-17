@@ -17,7 +17,7 @@ Anthropic Claude API wrapper for Go (Unofficial). Support:
 ## Installation
 
 ```
-go get github.com/liushuangls/go-anthropic/v2
+go get github.com/aiforen/claude
 ```
 
 Currently, go-anthropic requires Go version 1.21 or greater.
@@ -33,7 +33,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/liushuangls/go-anthropic/v2"
+	"github.com/aiforen/claude"
 )
 
 func main() {
@@ -67,7 +67,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/liushuangls/go-anthropic/v2"
+	"github.com/aiforen/claude"
 )
 
 func main() {
@@ -109,7 +109,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/liushuangls/go-anthropic/v2"
+	"github.com/aiforen/claude"
 )
 
 func main() {
@@ -168,8 +168,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/liushuangls/go-anthropic/v2"
-	"github.com/liushuangls/go-anthropic/v2/jsonschema"
+	"github.com/aiforen/claude"
+	"github.com/aiforen/claude/jsonschema"
 )
 
 func main() {
